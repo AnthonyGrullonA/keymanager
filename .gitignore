@@ -73,3 +73,5 @@ celerybeat-schedule
 /media/
 /coverage.xml
 htmlcov/
+set_github_secrets.sh
+setup_structure.py
