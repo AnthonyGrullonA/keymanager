@@ -12,7 +12,7 @@ env = environ.Env(
 )
 
 # 3. Leer archivo .env
-environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+environ.Env.read_env(os.path.join(BASE_DIR, '.env.examble'))
 
 # 4. Seguridad
 SECRET_KEY = env('SECRET_KEY')
