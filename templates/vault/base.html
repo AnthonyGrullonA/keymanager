@@ -1,0 +1,14 @@
+<!-- base.html -->
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    {% include 'vault/base/header.html' %}
+</head>
+<body>
+    {% include 'vault/base/navbar.html' %}
+    <main class='container mt-5'>
+        {% block content %}{% endblock %}
+    </main>
+    {% include 'vault/base/footer.html' %}
+</body>
+</html>
