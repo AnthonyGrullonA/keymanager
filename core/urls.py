@@ -4,5 +4,7 @@ from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('vault.urls')),
+    path('vault/', include('vault.urls')),
+    path('home/', include('dashboard.urls')),
+
 ]

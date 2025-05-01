@@ -1,0 +1,34 @@
+{% now "Y" as current_year %}
+<footer class="footer">
+  <div class="container-fluid d-flex justify-content-between">
+{% comment %}     
+    <nav class="pull-left">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="http://www.themekita.com" target="_blank">
+            ThemeKita
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ayuda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Licencias</a>
+        </li>
+      </ul>
+    </nav> {% endcomment %}
+    
+    <div class="copyright">
+      <i class="fa fa-copyright"></i> {{ current_year }}, hecho con
+      <i class="fa fa-heart heart text-danger"></i> por
+      <strong>Jairol Anthony Grullon Amparo</strong> | AppKeymanager
+    </div>
+    
+    
+    {% comment %} <div>
+      Distribuido por
+      <a target="_blank" href="https://themewagon.com/">ThemeWagon</a>.
+    </div> {% endcomment %}
+
+  </div>
+</footer>

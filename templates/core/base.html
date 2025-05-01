@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <title>{{ page_title }}</title>
+  <link rel="icon" href="{% static favicon_path %}" type="image/x-icon">
+  
+  <script src="{% static 'assets/js/plugin/webfont/webfont.min.js' %}"></script>
+  <script>
+    WebFont.load({
+      google: { families: ["Public Sans:300,400,500,600,700"] },
+      custom: {
+        families: [
+          "Font Awesome 5 Solid",
+          "Font Awesome 5 Regular",
+          "Font Awesome 5 Brands",
+          "simple-line-icons"
+        ],
+        urls: ["{% static 'assets/css/fonts.min.css' %}"]
+      },
+      active: function () {
+        sessionStorage.fonts = true;
+      }
+    });
+  </script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/plugins.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/kaiadmin.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'assets/css/demo.css' %}" />
+</head>
+
+<body>
+  <div class="wrapper">
+<body>
+  <div class="wrapper">
+    
+    <!-- Sidebar (Menú lateral) -->
+    {% include "core/partials/sidebar.html" %}
+
+    <div class="main-panel">
+
+      <!-- Topbar (superior) -->
+      {% include "core/partials/header.html" %}
+
+      <!-- Contenido principal -->
+      {% include "core/partials/overview.html" %}
+
+
+      <!-- Footer (Pie de página) -->
+      {% include "core/partials/footer.html" %}
+    </div>
+  </div>
+
+</body>
+  </div>
+
+  <!-- JS -->
+  <script src="{% static 'assets/js/core/jquery-3.7.1.min.js' %}"></script>
+  <script src="{% static 'assets/js/core/popper.min.js' %}"></script>
+  <script src="{% static 'assets/js/core/bootstrap.min.js' %}"></script>
+  <script src="{% static 'assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js' %}"></script>
+  <script src="{% static 'assets/js/plugin/chart.js/chart.min.js' %}"></script>
+  <script src="{% static 'assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js' %}"></script>
+  <script src="{% static 'assets/js/plugin/chart-circle/circles.min.js' %}"></script>
+  <script src="{% static 'assets/js/plugin/datatables/datatables.min.js' %}"></script>
+  <script src="{% static 'assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js' %}"></script>
+  <script src="{% static 'assets/js/plugin/jsvectormap/jsvectormap.min.js' %}"></script>
+  <script src="{% static 'assets/js/plugin/jsvectormap/world.js' %}"></script>
+  <script src="{% static 'assets/js/plugin/gmaps/gmaps.js' %}"></script>
+  <script src="{% static 'assets/js/plugin/sweetalert/sweetalert.min.js' %}"></script>
+  <script src="{% static 'assets/js/kaiadmin.min.js' %}"></script>
+</body>
+</html>
